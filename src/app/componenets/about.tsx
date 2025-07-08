@@ -10,14 +10,14 @@ const About = () => {
         <h2 className="text-3xl font-bold mb-6 text-center">About Me</h2>
 
         <p className="mb-4">
-          I am <strong>Sana Khalid</strong>, a passionate web developer with hands-on experience in
+          I’m <strong>Sana Khalid</strong>, a passionate web developer with hands-on experience in
           <strong> HTML</strong>, <strong>CSS</strong>, <strong>TypeScript</strong>, and modern frameworks like
           <strong> Next.js</strong> and <strong>Tailwind CSS</strong>. I love creating clean, responsive, and
           user-friendly web applications that work beautifully across all devices.
         </p>
 
         <p className="mb-4">
-          I amm also skilled in <strong>Python</strong> and love building interactive apps using
+          I'm also skilled in <strong>Python</strong> and love building interactive apps using
           <strong> Streamlit</strong>. I've created tools like a Growth Mindset App, Library Manager, and Unit Converter
           using Python’s simplicity and power.
         </p>
@@ -34,7 +34,7 @@ const About = () => {
         </p>
 
         <p>
-          Whether its reading tech blogs, improving UI/UX, or trying new frameworks I am a lifelong learner passionate
+          Whether it’s reading tech blogs, improving UI/UX, or trying new frameworks — I’m a lifelong learner passionate
           about building meaningful digital solutions.
         </p>
       </div>
