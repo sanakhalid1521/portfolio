@@ -6,6 +6,10 @@ import countdowntimer from '../public/countdowntimer.png'
 import todolist from '../public/todolist.png'
 import idcard from '../public/idcard.png'
 import pizzapic from '../public/pizzapic.png'
+import growthmind from '../public/growthmind.png'
+import librarymanager from '../public/librarymanager.png'
+import password from '../public/password.png'
+import unitconverter from '../public/unitconverter.png' 
 
 const Projects = () => {
   return (
@@ -171,6 +175,113 @@ const Projects = () => {
               </div>
             </div>
 
+          {/* Growth Mindset App */}
+<div className="lg:w-1/3 sm:w-1/2 p-4">
+  <div className="flex relative">
+    <Image
+      alt="Growth Mindset"
+      className="absolute inset-0 w-full h-full object-cover object-center"
+      src={growthmind}
+      layout="fill"
+      objectFit="cover"
+    />
+    <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+      <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+        Streamlit App
+      </h2>
+      <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+        Growth Mindset App
+      </h1>
+      <p className="leading-relaxed">
+        A Streamlit app that promotes positivity using Quranic verses and Islamic motivation.
+      </p>
+      <Link href="https://growthmind.streamlit.app/" className="text-indigo-500 inline-flex items-center mt-3">
+        View Project
+      </Link>
+    </div>
+  </div>
+</div>
+
+{/* Library Manager */}
+<div className="lg:w-1/3 sm:w-1/2 p-4">
+  <div className="flex relative">
+    <Image
+      alt="Library Manager"
+      className="absolute inset-0 w-full h-full object-cover object-center"
+      src={librarymanager}
+      layout="fill"
+      objectFit="cover"
+    />
+    <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+      <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+        Streamlit App
+      </h2>
+      <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+        Library Manager
+      </h1>
+      <p className="leading-relaxed">
+        A book issuing and search system using Python and Streamlit interface.
+      </p>
+      <Link href="https://librarymanager04.streamlit.app/" className="text-indigo-500 inline-flex items-center mt-3">
+        View Project
+      </Link>
+    </div>
+  </div>
+</div>
+
+{/* Password Strength Checker */}
+<div className="lg:w-1/3 sm:w-1/2 p-4">
+  <div className="flex relative">
+    <Image
+      alt="Password Checker"
+      className="absolute inset-0 w-full h-full object-cover object-center"
+      src={password}
+      layout="fill"
+      objectFit="cover"
+    />
+    <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+      <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+        Streamlit App
+      </h2>
+      <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+        Password Strength Checker
+      </h1>
+      <p className="leading-relaxed">
+        An app that evaluates the strength of your password using Python logic.
+      </p>
+      <Link href="https://passwordstrength03.streamlit.app/" className="text-indigo-500 inline-flex items-center mt-3">
+        View Project
+      </Link>
+    </div>
+  </div>
+</div>
+
+{/* Unit Converter */}
+<div className="lg:w-1/3 sm:w-1/2 p-4">
+  <div className="flex relative">
+    <Image
+      alt="Unit Converter"
+      className="absolute inset-0 w-full h-full object-cover object-center"
+      src={unitconverter}
+      layout="fill"
+      objectFit="cover"
+    />
+    <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+      <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+        Streamlit App
+      </h2>
+      <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+        Unit Converter
+      </h1>
+      <p className="leading-relaxed">
+        A unit conversion tool built in Streamlit to convert length, weight, temperature & more.
+      </p>
+      <Link href="https://unitconverterb.streamlit.app/" className="text-indigo-500 inline-flex items-center mt-3">
+        View Project
+      </Link>
+    </div>
+  </div>
+</div>
 
           </div>
         </div>
