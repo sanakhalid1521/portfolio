@@ -10,29 +10,32 @@ const About = () => {
         <h2 className="text-3xl font-bold mb-6 text-center">About Me</h2>
 
         <p className="mb-4">
-          I’m <strong>Sana Khalid</strong>, a passionate web developer focused on building visually appealing,
-          user-friendly, and responsive web applications. My journey blends creativity with logic, helping
-          me bring modern digital experiences to life.
+          I’m <strong>Sana Khalid</strong>, a passionate web developer with hands-on experience in
+          <strong> HTML</strong>, <strong>CSS</strong>, <strong>TypeScript</strong>, and modern frameworks like
+          <strong> Next.js</strong> and <strong>Tailwind CSS</strong>. I love creating clean, responsive, and
+          user-friendly web applications that work beautifully across all devices.
         </p>
 
         <p className="mb-4">
-          With a strong grasp of current web technologies and a commitment to clean code, I aim to exceed
-          user expectations through smooth interfaces, mobile-friendly layouts, and intuitive navigation.
+          I'm also skilled in <strong>Python</strong> and love building interactive apps using
+          <strong> Streamlit</strong>. I've created tools like a Growth Mindset App, Library Manager, and Unit Converter
+          using Python’s simplicity and power.
         </p>
 
         <p className="mb-4">
-          I love working on challenging projects that push my skills and creativity forward. Collaborating
-          with others energizes me — I believe teamwork is the key to innovative and successful solutions.
+          I enjoy exploring <strong>Agentic AI</strong> — including tools like <strong>Chainlit</strong> — and working on projects
+          with <strong>translator agents</strong>, <strong>multi-agent systems</strong>, and <strong>crypto tracking agents</strong> that
+          showcase automation and AI-driven functionality.
         </p>
 
         <p className="mb-4">
-          As a lifelong learner, I’m always exploring new frameworks, tools, and best practices to stay
-          current in this fast-paced industry.
+          Collaboration and teamwork inspire me, and I always look forward to working on challenging ideas that push
+          my creativity and technical skills further.
         </p>
 
         <p>
-          Whether it’s reading tech blogs, trying out new design patterns, or refining my UI/UX sense,
-          I’m driven by a desire to create meaningful, modern applications that make an impact.
+          Whether it’s reading tech blogs, improving UI/UX, or trying new frameworks — I’m a lifelong learner passionate
+          about building meaningful digital solutions.
         </p>
       </div>
     </section>
