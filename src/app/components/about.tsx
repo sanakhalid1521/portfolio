@@ -10,27 +10,26 @@ const About = () => {
         <h2 className="text-3xl font-bold mb-6 text-center">About Me</h2>
 
         <p className="mb-4">
-          I’m <strong>Sana Khalid</strong>, a passionate web developer with hands-on experience in
-          <strong> HTML</strong>, <strong>CSS</strong>, <strong>TypeScript</strong>, and modern frameworks like
-          <strong> Next.js</strong> and <strong>Tailwind CSS</strong>. I love creating clean, responsive, and
-          user-friendly web applications that work beautifully across all devices.
+          I’m <strong>Sana Khalid</strong>, a versatile <strong>Fullstack Developer</strong> and <strong>AI Specialist</strong>. 
+          With a strong foundation in <strong>Next.js</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>, 
+          I build high-performance web applications that combine elegant design with robust functionality.
         </p>
 
         <p className="mb-4">
-          I&apos;m also skilled in <strong>Python</strong> and love building interactive apps using
-          <strong> Streamlit</strong>. I&apos;ve created tools like a Growth Mindset App, Library Manager, and Unit Converter
-          using Python&apos;s simplicity and power.
+          I specialize in <strong>Agentic AI</strong> and <strong>Automation</strong>, creating <strong>24/7 AI Employees</strong> 
+          and intelligent agents that streamline business processes. My passion for <strong>Physical AI</strong> has led me 
+          to contribute to the educational space, including the development of the <strong>Physical AI & Humanoid Robotics Book</strong>.
         </p>
 
         <p className="mb-4">
-          I enjoy exploring <strong>Agentic AI</strong> — including tools like <strong>Chainlit</strong> — and working on projects
-          with <strong>translator agents</strong>, <strong>multi-agent systems</strong>, and <strong>crypto tracking agents</strong> that
-          showcase automation and AI-driven functionality.
+          Beyond AI, I have a proven track record of developing specialized tools like <strong>Professional Resume Builders</strong>, 
+          <strong>ID Card Generators</strong>, and efficient <strong>Task Management Systems</strong>. I love turning complex 
+          problems into simple, beautiful, and scalable digital solutions.
         </p>
 
         <p className="mb-4">
-          Collaboration and teamwork inspire me, and I always look forward to working on challenging ideas that push
-          my creativity and technical skills further.
+          I am a lifelong learner, always exploring the intersection of <strong>Humanoid Robotics</strong> and <strong>Software Engineering</strong>. 
+          Collaboration and innovation are at the heart of everything I do.
         </p>
 
         <p>
