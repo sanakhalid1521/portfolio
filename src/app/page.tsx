@@ -1,11 +1,11 @@
 
-import Hero from '../app/componenets/hero';
-import About from './componenets/about';
-import Projects from './componenets/project';
+import Hero from './components/hero';
+import About from './components/about';
+import Projects from './components/project';
 
-import Contact from './componenets/contact';
-import Skill from './componenets/skill';
-import Service from './componenets/services';
+import Contact from './components/contact';
+import Skill from './components/skill';
+import Service from './components/services';
 
 
 export default function Home() {

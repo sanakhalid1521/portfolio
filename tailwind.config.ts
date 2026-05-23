@@ -12,15 +12,17 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        cursive: ['"Dancing Script"', 'cursive'],
+      },
+      boxShadow: {
+        textShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', // Custom shadow for text
+      },
     },
   },
-  fontFamily: {
-    cursive: ['"Dancing Script"', 'cursive'],
-  },
-  boxShadow: {
-    textShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', // Custom shadow for text
-  },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow'),
+  ],
 };
 export default config;
 
