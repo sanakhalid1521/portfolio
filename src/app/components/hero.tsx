@@ -1,71 +1,86 @@
-'use client';
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
+import Link from 'next/link';
 import profilepic from '../../../public/profilepic.png';
 
 const Hero = () => {
   return (
     <section
       id="home"
-      className="h-screen flex flex-col md:flex-row justify-center items-center bg-gradient-to-r from-black to-gray-800 text-white"
+      className="h-screen flex flex-col md:flex-row justify-center items-center bg-gradient-to-r from-black via-gray-900 to-gray-800 text-white relative overflow-hidden"
     >
-      <div className="text-center md:text-left md:w-1/2 p-4 animate-fade-in-up">
-        <h1 className="text-6xl font-extrabold mb-4 animate-text">
+      {/* Background Decorative Element */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-green-900/20 rounded-full blur-3xl -z-10 animate-pulse"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-900/10 rounded-full blur-3xl -z-10"></div>
+
+      <div className="text-center md:text-left md:w-1/2 p-6 z-10">
+        <h1 className="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">
           Hi, I am{' '}
-          <span className="text-shadow bg-gradient-to-r text-green-400">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600">
             Sana Khalid
           </span>
         </h1>
-        <div className="text-3xl mb-4">
+        <div className="text-2xl md:text-4xl font-light mb-6 text-gray-300">
           <Typewriter
             options={{
               strings: [
-                'Web Developer',
-                'JavaScript Lover',
-                'UI/UX Designer',
-                'Web Application Expert',
-                'Python & Agentic AI Explorer',
+                'Fullstack Developer',
+                'Humanoid AI Researcher',
+                'Agentic AI Specialist',
+                'Physical AI Architect',
+                'Python & Robotics Explorer',
               ],
               autoStart: true,
               loop: true,
+              delay: 75,
             }}
           />
         </div>
-        <p className="text-lg mb-4">
-          I am a web developer and UI expert. I specialize in creating intuitive
-          and visually appealing web applications. Recently, I’ve been working
-          on advanced Python projects like a Translator App, Multi-Agent System,
-          and Crypto Currency Assistant using Agentic AI principles.
+        <p className="text-lg md:text-xl mb-8 text-gray-400 leading-relaxed">
+          Pioneering the future of <strong>Humanoid Physical AI</strong>. I specialize in building 
+          intelligent 24/7 AI Agents and end-to-end Fullstack systems that bridge the gap 
+          between software and robotics.
         </p>
 
-        <div className="mt-4">
-          <span className="inline-block bg-green-700 text-white text-sm px-3 py-1 rounded-full mr-2 mb-2">
-            Python
-          </span>
-          <span className="inline-block bg-green-700 text-white text-sm px-3 py-1 rounded-full mr-2 mb-2">
-            Agentic AI
-          </span>
-          <span className="inline-block bg-green-700 text-white text-sm px-3 py-1 rounded-full mr-2 mb-2">
-            Translator App
-          </span>
-          <span className="inline-block bg-green-700 text-white text-sm px-3 py-1 rounded-full mr-2 mb-2">
-            Multi-Agent System
-          </span>
-          <span className="inline-block bg-green-700 text-white text-sm px-3 py-1 rounded-full mr-2 mb-2">
-            Crypto Currency AI
-          </span>
+        <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-8">
+          <Link 
+            href="/resume.png" // Assumes you have your resume at public/resume.png
+            target="_blank"
+            className="px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-all duration-300 shadow-lg shadow-green-900/20 flex items-center"
+          >
+            Download CV
+          </Link>
+          <Link 
+            href="#contact"
+            className="px-8 py-3 border border-green-500 text-green-400 hover:bg-green-500/10 font-bold rounded-lg transition-all duration-300"
+          >
+            Contact Me
+          </Link>
+        </div>
+
+        <div className="flex flex-wrap justify-center md:justify-start gap-2">
+          {['ROS 2', 'Next.js', 'Agentic AI', 'Python', 'Physical AI'].map((tag) => (
+            <span key={tag} className="bg-gray-800/50 border border-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">
+              {tag}
+            </span>
+          ))}
         </div>
       </div>
-      <div className="md:w-1/2 flex justify-center animate-fade-in">
-        <Image
-          src={profilepic}
-          alt="Sana Khalid"
-          width={300}
-          height={300}
-          className="rounded-full border-4 border-white object-cover aspect-square"
-          priority
-        />
+
+      <div className="md:w-1/2 flex justify-center relative">
+        {/* Glow effect behind image */}
+        <div className="absolute inset-0 bg-green-500/20 rounded-full blur-2xl animate-pulse scale-90"></div>
+        <div className="relative group">
+          <Image
+            src={profilepic}
+            alt="Sana Khalid"
+            width={350}
+            height={350}
+            className="rounded-full border-4 border-green-500/30 object-cover aspect-square shadow-2xl transition-transform duration-500 group-hover:scale-105"
+            priority
+          />
+        </div>
       </div>
     </section>
   );
