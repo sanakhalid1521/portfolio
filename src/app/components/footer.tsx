@@ -18,7 +18,7 @@ export default function Footer() {
         </p>
         <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
           <a 
-            href="#" // TODO: Add your LinkedIn profile URL
+            href="https://www.linkedin.com/in/sana-khalid" // TODO: Verify your LinkedIn handle
             className="text-blue-900 hover:text-indigo-500 transition duration-300 ease-in-out ml-3"
             aria-label="LinkedIn"
             target="_blank"
@@ -27,7 +27,7 @@ export default function Footer() {
             <FaLinkedin size={50} />
           </a>
           <a 
-            href="#" // TODO: Add your Facebook profile URL
+            href="https://www.facebook.com/sanakhalid" // TODO: Verify your Facebook handle
             className="text-blue-900 hover:text-indigo-500 transition duration-300 ease-in-out ml-3"
             aria-label="Facebook"
             target="_blank"
@@ -36,7 +36,7 @@ export default function Footer() {
             <FaFacebook size={50} />
           </a>
           <a 
-            href="#" // TODO: Add your GitHub profile URL
+            href="https://github.com/sanakhalid1521" 
             className="text-blue-900 hover:text-indigo-500 transition duration-300 ease-in-out ml-3"
             aria-label="GitHub"
             target="_blank"
@@ -45,7 +45,7 @@ export default function Footer() {
             <FaGithub size={50} />
           </a>
           <a 
-            href="#" // TODO: Add your Twitter profile URL
+            href="https://twitter.com/sanakhalid" // TODO: Verify your Twitter handle
             className="text-blue-900 hover:text-indigo-500 transition duration-300 ease-in-out ml-3"
             aria-label="Twitter"
             target="_blank"

@@ -125,9 +125,35 @@ function Skill() {
                 <CiCircleCheck size={24} />
               </div>
               <div className="flex-grow">
-                <h2 className="text-gray-300 text-lg title-font font-medium mb-1">Agentic AI</h2>
+                <h2 className="text-gray-300 text-lg title-font font-medium mb-1">Agentic AI (LangChain/Chainlit)</h2>
                 <div className="relative h-1 w-full bg-gray-200 rounded-xl">
-                  <div className="absolute h-1 bg-indigo-500 rounded-xl text-right font-bold text-gray-200 w-[80%]">80%</div>
+                  <div className="absolute h-1 bg-indigo-500 rounded-xl text-right font-bold text-gray-200 w-[85%]">85%</div>
+                </div>
+              </div>
+            </div>
+
+            {/* ROS 2 */}
+            <div className="p-4 md:w-1/3 flex items-center">
+              <div className="text-gray-100 mr-3 flex-shrink-0">
+                <CiCircleCheck size={24} />
+              </div>
+              <div className="flex-grow">
+                <h2 className="text-gray-300 text-lg title-font font-medium mb-1">ROS 2 (Robotic OS)</h2>
+                <div className="relative h-1 w-full bg-gray-200 rounded-xl">
+                  <div className="absolute h-1 bg-indigo-500 rounded-xl text-right font-bold text-gray-200 w-[75%]">75%</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Humanoid Robotics */}
+            <div className="p-4 md:w-1/3 flex items-center">
+              <div className="text-gray-100 mr-3 flex-shrink-0">
+                <CiCircleCheck size={24} />
+              </div>
+              <div className="flex-grow">
+                <h2 className="text-gray-300 text-lg title-font font-medium mb-1">Humanoid Robotics</h2>
+                <div className="relative h-1 w-full bg-gray-200 rounded-xl">
+                  <div className="absolute h-1 bg-indigo-500 rounded-xl text-right font-bold text-gray-200 w-[70%]">70%</div>
                 </div>
               </div>
             </div>

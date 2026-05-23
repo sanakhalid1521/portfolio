@@ -34,7 +34,11 @@ export default function Contact() {
           
         </div>
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
-          <form onSubmit={handleSubmit}>
+          <form 
+            action="https://formspree.io/f/mqakpjne" // TODO: Replace with your Formspree ID
+            method="POST"
+            onSubmit={handleSubmit}
+          >
             <div className="flex flex-wrap -m-2">
               <div className="p-2 w-1/2">
                 <div className="relative">
