@@ -10,31 +10,29 @@ const About = () => {
         <h2 className="text-3xl font-bold mb-6 text-center">About Me</h2>
 
         <p className="mb-4">
-          I’m <strong>Sana Khalid</strong>, a versatile <strong>Fullstack Developer</strong> and <strong>AI Specialist</strong>. 
-          With a strong foundation in <strong>Next.js</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>, 
-          I build high-performance web applications that combine elegant design with robust functionality.
+          I’m <strong>Sana Khalid</strong>, a <strong>Humanoid Robotics Engineer</strong> and <strong>Physical AI Architect</strong> passionate about building intelligent systems that bridge software and robotics.
+          With expertise in <strong>Next.js</strong>, <strong>TypeScript</strong>, <strong>Python</strong>, and <strong>ROS 2</strong>, I create end-to-end solutions for the era of embodied AI.
         </p>
 
         <p className="mb-4">
-          I specialize in <strong>Agentic AI</strong> and <strong>Automation</strong>, creating <strong>24/7 AI Employees</strong> 
-          and intelligent agents that streamline business processes. My passion for <strong>Physical AI</strong> has led me 
-          to contribute to the educational space, including the development of the <strong>Physical AI & Humanoid Robotics Book</strong>.
+          I specialize in <strong>Physical AI</strong> and <strong>Humanoid Robotics</strong>, designing <strong>24/7 AI Employees</strong> that operate autonomously, perceive, reason, and act in real-world environments.
+          My work includes contributing to the <strong>Physical AI & Humanoid Robotics Book</strong> and developing agentic AI systems that streamline complex workflows.
         </p>
 
         <p className="mb-4">
-          Beyond AI, I have a proven track record of developing specialized tools like <strong>Professional Resume Builders</strong>, 
-          <strong>ID Card Generators</strong>, and efficient <strong>Task Management Systems</strong>. I love turning complex 
+          Beyond AI, I have a proven track record of building specialized tools like <strong>Professional Resume Builders</strong>,
+          <strong>ID Card Generators</strong>, and efficient <strong>Task Management Systems</strong>. I love turning complex
           problems into simple, beautiful, and scalable digital solutions.
         </p>
 
         <p className="mb-4">
-          I am a lifelong learner, always exploring the intersection of <strong>Humanoid Robotics</strong> and <strong>Software Engineering</strong>. 
+          I am a lifelong learner, always exploring the intersection of <strong>Humanoid Robotics</strong>, <strong>Physical AI</strong>, and <strong>Software Engineering</strong>.
           Collaboration and innovation are at the heart of everything I do.
         </p>
 
         <p>
           Whether it’s reading tech blogs, improving UI/UX, or trying new frameworks — I’m a lifelong learner passionate
-          about building meaningful digital solutions.
+          about building meaningful digital solutions that advance the frontier of embodied intelligence.
         </p>
       </div>
     </section>
