@@ -1,0 +1,9 @@
+@echo off
+echo Staging changes...
+git add .
+echo Committing changes...
+git commit -m "Fixes and new features: Dark Mode, Responsive Navbar, Project Filtering, Scroll Animations, and CV Download fix"
+echo Pushing to GitHub...
+git push
+echo Done!
+pause

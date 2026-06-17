@@ -9,25 +9,25 @@ import resume_builder from '../../../public/ResumeBuilder.png';
 
 const Service: React.FC = () => {
   return (
-    <section id='services' className="py-16 bg-gray-800">
+    <section id='services' className="py-16 bg-white dark:bg-gray-800 transition-colors duration-500">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold text-gray-200">My Services</h2>
-        <p className="mt-4 text-gray-200">
+        <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-200">My Services</h2>
+        <p className="mt-4 text-gray-600 dark:text-gray-200">
           I offer a variety of specialized services to help bring your vision to life.
         </p>
 
         <div className="mt-10 flex flex-wrap justify-center gap-8">
           {/* Service 1 - Physical AI Book */}
-          <div className="w-64 p-4 bg-gray-500 rounded-lg shadow-md flex flex-col items-center group hover:bg-gray-600 transition-all">
-            <div className="overflow-hidden rounded h-40 w-full flex items-center justify-center bg-gray-700">
+          <div className="w-64 p-4 bg-gray-100 dark:bg-gray-500 rounded-lg shadow-md flex flex-col items-center group hover:bg-gray-200 dark:hover:bg-gray-600 transition-all">
+            <div className="overflow-hidden rounded h-40 w-full flex items-center justify-center bg-gray-300 dark:bg-gray-700">
               <Image 
                 src={physicalAIBook} 
                 alt="Physical AI Book" 
                 className="rounded object-contain h-full w-full transition-transform duration-300 transform group-hover:-translate-y-2" 
               />
             </div>
-            <h3 className="text-lg font-semibold text-gray-200 mt-4">Physical AI Book</h3>
-            <p className="mt-2 text-gray-300 text-sm">
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mt-4">Physical AI Book</h3>
+            <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm">
               Creating interactive educational content and books on Physical AI and Robotics.
             </p>
           </div>

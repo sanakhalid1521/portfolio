@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="p-8 font-normal justify-center bg-gradient-to-r from-black to-gray-800 text-gray-200"
+      className="p-8 font-normal justify-center bg-white dark:bg-gradient-to-r dark:from-black dark:to-gray-800 text-gray-800 dark:text-gray-200 transition-colors duration-500"
     >
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-3xl font-bold mb-6 text-center">About Me</h2>

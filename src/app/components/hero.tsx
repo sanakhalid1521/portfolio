@@ -1,27 +1,28 @@
-import React from 'react';
-import Typewriter from 'typewriter-effect';
+"use client";
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import profilepic from '../../../public/profilepic.png';
+import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
   return (
     <section
       id="home"
-      className="h-screen flex flex-col md:flex-row justify-center items-center bg-gradient-to-r from-black via-gray-900 to-gray-800 text-white relative overflow-hidden"
+      className="h-screen flex flex-col md:flex-row justify-center items-center bg-gradient-to-r from-gray-50 to-white dark:from-black dark:via-gray-900 dark:to-gray-800 text-gray-900 dark:text-white relative overflow-hidden transition-colors duration-500"
     >
       {/* Background Decorative Element */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-green-900/20 rounded-full blur-3xl -z-10 animate-pulse"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-900/10 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-green-500/10 dark:bg-green-900/20 rounded-full blur-3xl -z-10 animate-pulse"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/5 dark:bg-blue-900/10 rounded-full blur-3xl -z-10"></div>
 
       <div className="text-center md:text-left md:w-1/2 p-6 z-10">
         <h1 className="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">
           Hi, I am{' '}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-emerald-600">
             Sana Khalid
           </span>
         </h1>
-        <div className="text-2xl md:text-4xl font-light mb-6 text-gray-300">
+        <div className="text-2xl md:text-4xl font-light mb-6 text-gray-700 dark:text-gray-300">
           <Typewriter
             options={{
               strings: [
@@ -44,13 +45,13 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-8">
-          <Link 
-            href="/resume.png" // Assumes you have your resume at public/resume.png
-            target="_blank"
-            className="px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-all duration-300 shadow-lg shadow-green-900/20 flex items-center"
+          <a 
+            href="/resume.png" 
+            download="Sana_Khalid_CV.png"
+            className="px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-all duration-300 shadow-lg shadow-green-900/20 flex items-center cursor-pointer"
           >
             Download CV
-          </Link>
+          </a>
           <Link 
             href="#contact"
             className="px-8 py-3 border border-green-500 text-green-400 hover:bg-green-500/10 font-bold rounded-lg transition-all duration-300"

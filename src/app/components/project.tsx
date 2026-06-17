@@ -1,4 +1,5 @@
-import React from 'react';
+"use client";
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import resume from '../../../public/resume.png';
@@ -13,305 +14,160 @@ import unitconverter from '../../../public/unitconverter.png'
 import humanoid from '../../../public/humanoid.png'
 
 const Projects = () => {
+  const [filter, setFilter] = useState('All');
+
+  const projectData = [
+    {
+      title: "Professional Resume Builder",
+      category: "Professional Tools",
+      description: "A high-performance, professional tool for creating polished resumes with advanced customization and real-time preview.",
+      image: resume,
+      link: "https://professional-resume-builder-gamma.vercel.app",
+      tag: "Professional Tool"
+    },
+    {
+      title: "Count Down Timer",
+      category: "Web Apps",
+      description: "A countdown timer app to track time precisely and enhance productivity.",
+      image: countdowntimer,
+      link: "https://countdowntimer1.vercel.app",
+      tag: "Utility"
+    },
+    {
+      title: "To-Do-List",
+      category: "Web Apps",
+      description: "A streamlined to-do list app for efficient task management and daily productivity.",
+      image: todolist,
+      link: "https://todolistnextjs-six.vercel.app",
+      tag: "Productivity"
+    },
+    {
+      title: "Governor ID card",
+      category: "Professional Tools",
+      description: "An ID card generator for the Governor Sindh IT Initiative, designed for quick and professional identification.",
+      image: idcard,
+      link: "https://idcard-eyomzki37-sanakhalid1521s-projects.vercel.app",
+      tag: "Professional Tool"
+    },
+    {
+      title: "Pizza E-commerce",
+      category: "Web Apps",
+      description: "A flavorful pizza e-commerce site offering delicious variety and seamless ordering.",
+      image: pizzapic,
+      link: "https://pizzaecommerce-rouge.vercel.app",
+      tag: "E-Commerce"
+    },
+    {
+      title: "Growth Mindset App",
+      category: "AI & Python",
+      description: "A Streamlit app that promotes positivity using Quranic verses and Islamic motivation.",
+      image: growthmind,
+      link: "https://growthmind.streamlit.app/",
+      tag: "Streamlit App"
+    },
+    {
+      title: "Library Manager",
+      category: "Professional Tools",
+      description: "A book issuing and search system using Python and Streamlit interface.",
+      image: librarymanager,
+      link: "https://librarymanager04.streamlit.app/",
+      tag: "Management"
+    },
+    {
+      title: "Password Strength Checker",
+      category: "AI & Python",
+      description: "An app that evaluates the strength of your password using Python logic.",
+      image: password,
+      link: "https://passwordstrength03.streamlit.app/",
+      tag: "Security"
+    },
+    {
+      title: "Unit Converter",
+      category: "Web Apps",
+      description: "A unit conversion tool built in Streamlit to convert length, weight, temperature & more.",
+      image: unitconverter,
+      link: "https://unitconverterb.streamlit.app/",
+      tag: "Utility"
+    },
+    {
+      title: "Humanoid Physical AI Book",
+      category: "AI & Python",
+      description: "An interactive guide and exploration of Humanoid Physical AI, featuring advanced concepts.",
+      image: humanoid,
+      link: "https://humanoid-physical-ai-book.vercel.app",
+      tag: "AI & Robotics"
+    }
+  ];
+
+  const categories = ['All', 'Web Apps', 'AI & Python', 'Professional Tools'];
+
+  const filteredProjects = filter === 'All' 
+    ? projectData 
+    : projectData.filter(project => project.category === filter);
+
   return (
-    <>
-      <section id="projects" className="p-8 bg-gradient-to-r from-black to-gray-800  body-font">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-200">
-              My Projects
-            </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-200">
+    <section id="projects" className="p-8 bg-gradient-to-r from-black to-gray-800 dark:from-black dark:to-black body-font transition-colors duration-300">
+      <div className="container px-5 py-24 mx-auto">
+        <div className="flex flex-col text-center w-full mb-12">
+          <h1 className="sm:text-4xl text-3xl font-bold title-font mb-4 text-gray-200">
+            My Projects
+          </h1>
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-400">
             Explore some of my recent work, crafted with a focus on functionality and user experience.
-            </p>
-          </div>
-          <div className="flex flex-wrap -m-4">
-            <div className="lg:w-1/3 sm:w-1/2 p-4">
-              <div className="flex relative">
-                <Image
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={resume}
-                  layout="fill"
-                  objectFit="cover"
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    Professional Tool
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Professional Resume Builder
-                  </h1>
-                  <p className="leading-relaxed">
-                  A high-performance, professional tool for creating polished resumes with advanced customization and real-time preview.
-                  </p>
-                  <Link href="https://professional-resume-builder-gamma.vercel.app" 
-                    className="text-indigo-500 inline-flex items-center mt-3  hover:underline">
-                      View Project
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-
- {/* countdowntimer Project */}
- <div className="lg:w-1/3 sm:w-1/2 p-4">
-              <div className="flex relative">
-                <Image
-                  alt="New Project"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={countdowntimer}
-                  layout="fill"
-                  objectFit="cover"
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    Count Down Timer
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                  Count Down Timer
-                  </h1>
-                  <p className="leading-relaxed">
-                  A countdown timer app to track time precisely and enhance productivity. 
-                  </p>
-                  <Link href="https://countdowntimer1.vercel.app" 
-                    className="text-indigo-500 inline-flex items-center mt-3">
-                      View Project
-                  
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-
-
-             {/* todolist Project */}
-             <div className="lg:w-1/3 sm:w-1/2 p-4">
-              <div className="flex relative">
-                <Image
-                  alt="New Project"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={todolist}
-                  layout="fill"
-                  objectFit="cover"
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    Todo-list
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    To-Do-List
-                  </h1>
-                  <p className="leading-relaxed">
-                  A streamlined to-do list app for efficient task management and daily productivity.
-                  </p>
-                  <Link href="https://todolistnextjs-six.vercel.app" 
-                    className="text-indigo-500 inline-flex items-center mt-3">
-                      View Project
-                    
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-
-{/* id-card Project */}
-<div className="lg:w-1/3 sm:w-1/2 p-4">
-              <div className="flex relative">
-                <Image
-                  alt="New Project"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={idcard}
-                  layout="fill"
-                  objectFit="cover"
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    Id card
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Governor ID card
-                  </h1>
-                  <p className="leading-relaxed">
-                  An ID card generator for the Governor Sindh IT Initiative, designed for quick and professional identification.
-   
-   </p>               <Link href="https://id-card-1-sanakhalid1521s-projects.vercel.app" 
-                    className="text-indigo-500 inline-flex items-center mt-3">
-                      View Project
-                    
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-
-{/* e-commercewebsite Project */}
-<div className="lg:w-1/3 sm:w-1/2 p-4">
-              <div className="flex relative">
-                <Image
-                  alt="New Project"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={pizzapic}
-                  layout="fill"
-                  objectFit="cover"
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    E-Commerce Website
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                    Pizza E-commerce
-                  </h1>
-                  <p className="leading-relaxed">
-                  A flavorful pizza e-commerce site offering delicious variety and seamless ordering.
-                  </p>
-                  <Link href="https://pizzaecommerce-rouge.vercel.app"
-                    className="text-indigo-500 inline-flex items-center mt-3">
-                      View Project
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-          {/* Growth Mindset App */}
-<div className="lg:w-1/3 sm:w-1/2 p-4">
-  <div className="flex relative">
-    <Image
-      alt="Growth Mindset"
-      className="absolute inset-0 w-full h-full object-cover object-center"
-      src={growthmind}
-      layout="fill"
-      objectFit="cover"
-    />
-    <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-      <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-        Streamlit App
-      </h2>
-      <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-        Growth Mindset App
-      </h1>
-      <p className="leading-relaxed">
-        A Streamlit app that promotes positivity using Quranic verses and Islamic motivation.
-      </p>
-      <Link href="https://growthmind.streamlit.app/" className="text-indigo-500 inline-flex items-center mt-3">
-        View Project
-      </Link>
-    </div>
-  </div>
-</div>
-
-{/* Library Manager */}
-<div className="lg:w-1/3 sm:w-1/2 p-4">
-  <div className="flex relative">
-    <Image
-      alt="Library Manager"
-      className="absolute inset-0 w-full h-full object-cover object-center"
-      src={librarymanager}
-      layout="fill"
-      objectFit="cover"
-    />
-    <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-      <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-        Streamlit App
-      </h2>
-      <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-        Library Manager
-      </h1>
-      <p className="leading-relaxed">
-        A book issuing and search system using Python and Streamlit interface.
-      </p>
-      <Link href="https://librarymanager04.streamlit.app/" className="text-indigo-500 inline-flex items-center mt-3">
-        View Project
-      </Link>
-    </div>
-  </div>
-</div>
-
-{/* Password Strength Checker */}
-<div className="lg:w-1/3 sm:w-1/2 p-4">
-  <div className="flex relative">
-    <Image
-      alt="Password Checker"
-      className="absolute inset-0 w-full h-full object-cover object-center"
-      src={password}
-      layout="fill"
-      objectFit="cover"
-    />
-    <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-      <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-        Streamlit App
-      </h2>
-      <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-        Password Strength Checker
-      </h1>
-      <p className="leading-relaxed">
-        An app that evaluates the strength of your password using Python logic.
-      </p>
-      <Link href="https://passwordstrength03.streamlit.app/" className="text-indigo-500 inline-flex items-center mt-3">
-        View Project
-      </Link>
-    </div>
-  </div>
-</div>
-
-{/* Unit Converter */}
-<div className="lg:w-1/3 sm:w-1/2 p-4">
-  <div className="flex relative">
-    <Image
-      alt="Unit Converter"
-      className="absolute inset-0 w-full h-full object-cover object-center"
-      src={unitconverter}
-      layout="fill"
-      objectFit="cover"
-    />
-    <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-      <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-        Streamlit App
-      </h2>
-      <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-        Unit Converter
-      </h1>
-      <p className="leading-relaxed">
-        A unit conversion tool built in Streamlit to convert length, weight, temperature & more.
-      </p>
-      <Link href="https://unitconverterb.streamlit.app/" className="text-indigo-500 inline-flex items-center mt-3">
-        View Project
-      </Link>
-    </div>
-  </div>
-</div>
-
-{/* Humanoid Physical AI Book */}
-<div className="lg:w-1/3 sm:w-1/2 p-4">
-  <div className="flex relative">
-    <Image
-      alt="Humanoid Physical AI Book"
-      className="absolute inset-0 w-full h-full object-cover object-center"
-      src={humanoid}
-      layout="fill"
-      objectFit="cover"
-    />
-    <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-      <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-        AI Project
-      </h2>
-      <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-        Humanoid Physical AI Book
-      </h1>
-      <p className="leading-relaxed">
-        An interactive guide and exploration of Humanoid Physical AI, featuring advanced concepts.
-      </p>
-      <Link href="https://humanoid-physical-ai-book.vercel.app" className="text-indigo-500 inline-flex items-center mt-3">
-        View Project
-      </Link>
-    </div>
-  </div>
-</div>
-
-          </div>
+          </p>
         </div>
-      </section>
-    </>
+
+        {/* Filter Buttons */}
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setFilter(cat)}
+              className={`px-6 py-2 rounded-full border transition-all duration-300 ${
+                filter === cat 
+                ? 'bg-green-600 border-green-600 text-white shadow-lg shadow-green-900/40' 
+                : 'border-gray-600 text-gray-400 hover:border-green-500 hover:text-green-400'
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
+        <div className="flex flex-wrap -m-4">
+          {filteredProjects.map((project, index) => (
+            <div key={index} className="lg:w-1/3 sm:w-1/2 p-4">
+              <div className="flex relative h-64 group overflow-hidden rounded-xl border-2 border-gray-700 hover:border-green-500 transition-all duration-500">
+                <Image
+                  alt={project.title}
+                  className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
+                  src={project.image}
+                  fill
+                />
+                <div className="px-8 py-10 relative z-10 w-full bg-gray-900/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center">
+                  <h2 className="tracking-widest text-xs title-font font-semibold text-green-400 mb-1 uppercase">
+                    {project.tag}
+                  </h2>
+                  <h1 className="title-font text-xl font-bold text-white mb-3">
+                    {project.title}
+                  </h1>
+                  <p className="leading-relaxed text-sm text-gray-300 mb-4 line-clamp-3">
+                    {project.description}
+                  </p>
+                  <Link 
+                    href={project.link}
+                    target="_blank"
+                    className="px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm font-bold rounded transition-colors"
+                  >
+                    View Project
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 
