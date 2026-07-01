@@ -4,6 +4,7 @@ import Projects from './components/project';
 import Contact from './components/contact';
 import Skill from './components/skill';
 import Service from './components/services';
+import Blog from './components/blog';
 import ScrollReveal from './components/ScrollReveal';
 
 export default function Home() {
@@ -23,6 +24,10 @@ export default function Home() {
 
       <ScrollReveal animation="slide-up">
         <Service />
+      </ScrollReveal>
+
+      <ScrollReveal animation="slide-up">
+        <Blog />
       </ScrollReveal>
 
       <ScrollReveal animation="slide-up">

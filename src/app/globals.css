@@ -2,3 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .animate-slow {
+    animation-duration: 8s;
+  }
+
+  .animate-slower {
+    animation-duration: 12s;
+  }
+
+  .animate-slowest {
+    animation-duration: 16s;
+  }
+
+  .delay-0 {
+    animation-delay: 0s;
+  }
+
+  .delay-2 {
+    animation-delay: 2s;
+  }
+
+  .delay-4 {
+    animation-delay: 4s;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-slow {
+    animation: float 8s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 4s ease-in-out infinite;
+  }
+
+  @keyframes pulse-slow {
+    0%, 100% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.8;
+    }
+  }
+}
