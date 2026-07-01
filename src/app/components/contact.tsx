@@ -10,7 +10,7 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [messageCount, setMessageCount] = useState(0);
 
-  const validateEmail = (email) => {
+  const validateEmail = (email: string) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
   };
@@ -79,7 +79,7 @@ export default function Contact() {
             Get In Touch
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-gray-600 dark:text-gray-300">
-            Have a project in mind or want to collaborate? I'd love to hear from you.
+            Have a project in mind or want to collaborate? I&apos;d love to hear from you.
           </p>
         </div>
 
@@ -94,7 +94,7 @@ export default function Contact() {
                   Message Sent Successfully!
                 </h3>
                 <p className="text-sm text-gray-600 dark:text-gray-300">
-                  Thank you for reaching out. I'll get back to you within 24 hours.
+                  Thank you for reaching out. I&apos;ll get back to you within 24 hours.
                 </p>
               </div>
             </div>
@@ -174,7 +174,7 @@ export default function Contact() {
                     className="w-full bg-gray-100 dark:bg-gray-800 bg-opacity-50 rounded border border-gray-300 dark:border-gray-700 focus:border-green-500 focus:bg-white dark:focus:bg-gray-900 focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-gray-700 dark:text-gray-200 py-2 px-4 resize-none leading-6 transition-colors duration-200 ease-in-out"
                     placeholder="Type your message here..."
                     required
-                    minLength="10"
+                    minLength={10}
                   />
                   <div className="mt-1 text-right text-sm text-gray-500 dark:text-gray-400">
                     {messageCount}/1000 characters
